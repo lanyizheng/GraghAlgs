@@ -23,7 +23,7 @@ public class BFS {
     }
     //因为这里显式地采用了队列，所以并没有使用递归的方式
     public void bfs(Graph G,int s){
-        //使用队列来保存已经被标记过但是其领接表还没有被检查的点
+        //使用队列来保存已经被标记过但是其邻接表还没有被检查的点
         Queue<Integer> queue=new LinkedList<>();
         marked[s]=true;
         queue.add(s);
