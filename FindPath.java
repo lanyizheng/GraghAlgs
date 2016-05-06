@@ -1,11 +1,14 @@
 import java.util.Collections;
-import java.util.Iterator;
+
 import java.util.List;
 import java.util.Stack;
-import java.util.stream.Collector;
+
 
 /**
  * Created by admin on 2016/5/6.
+ * DFS的一个典型应用就是寻找路径
+ * 使用edgeTo数组来保存通过那一条边遍历到这个点（实际上保存的边的另一个端点）
+ * 比如：edgeTo[3]=4 表示可以通过顶点4找到顶点3
  */
 public class FindPath {
     public boolean[] marked;
